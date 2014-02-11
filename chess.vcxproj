@@ -56,7 +56,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalOptions>/FORCE %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -90,10 +89,11 @@
     <ResourceCompile Include="chess.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Доска.JPG" />
+    <Image Include="Шахматная доска.JPG" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Readme.txt" />
+    <Text Include="TeamWork.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

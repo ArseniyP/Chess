@@ -19,4 +19,28 @@
 					 EMPTY,		//Пустая клеточка
 	};
 
+	enum letterCourse {NoInitialized, A, B, C, D, E, F, G, H}; //Буквенный ход
+
+	struct hod {
+		letterCourse character;
+		unsigned int num;
+
+		hod() : character(NoInitialized), num(-1) {}
+
+		hod(letterCourse Сharacter, unsigned int Num)
+		{
+				if((Num < 1) || (Num > 8))
+					throw "Некорректно передан параметр числа хода. Допустимый диапазон [1;8]\n";
+				character = Сharacter;
+				num = Num;
+		}
+
+		bool isValid() //Проверка корректности данных хода
+		{
+				if((num < 1) || (num > 8))
+					return false;
+				return true;
+		}
+	};
+
 #endif // !GAME_H

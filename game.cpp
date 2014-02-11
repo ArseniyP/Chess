@@ -41,11 +41,9 @@ void main() {
 	};
 
 	//Ход с а2 на а3 фигуры, расположенной на а2 - белой пешки
-	int ratingHoda = winningRating('a', 3, 'a', 2, doska);
+	int ratingHoda = winningRating(new hod(A, 2), new hod(A, 3), doska);
 
 	cout << "При ходе пешки с а2 на а3 полученный рейтинг выиграшности компьютера, играющего белыми, от 1 до 100 включительно = " << ratingHoda << endl;
 
-	char temp;
-	cout << "Введите любой символ для выхода и Enter >";
-	cin >> temp;
+	system("pause"); //system находиться в stdlib.h
 }

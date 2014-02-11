@@ -45,13 +45,10 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Доска.JPG">
-      <Filter>Файлы ресурсов</Filter>
-    </Image>
+    <Text Include="Readme.txt" />
+    <Text Include="TeamWork.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Readme.txt">
-      <Filter>Файлы исходного кода</Filter>
-    </Text>
+    <Image Include="Шахматная доска.JPG" />
   </ItemGroup>
 </Project>
